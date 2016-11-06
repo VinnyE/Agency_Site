@@ -1,7 +1,7 @@
 .hero {
   background: linear-gradient(45deg, rgba(9, 5, 48, 0.85), rgba(49, 29, 94, 0.85)), url('../assets/images/hero.jpg') no-repeat center 0;
   background-size: cover;
-  height: 41.875em;
+  min-height: 41.875em;
   color: white;
 }
 .logo {
@@ -25,6 +25,9 @@ a {
   text-transform: uppercase;
   text-decoration: none;
   color: white;
+  &:hover {
+    opacity: 0.8;
+  }
 }
 .current-page a {
   color: $robin-egg-blue;

@@ -26,8 +26,11 @@ h2 {
   font-family: $display-font;
 }
 .wrapper {
-  width: 60em;
+  max-width: 60em;
   margin: auto;
+  @media (max-width: 980px) {
+    padding: 0 1em;
+  }
 }
 .btn {
   font-family: $btn-font;
@@ -36,4 +39,7 @@ h2 {
   border: 1px solid $robin-egg-blue;
   border-radius: 2px;
   display: inline-block;
+  &:hover {
+    opacity: 0.8;
+  }
 }
