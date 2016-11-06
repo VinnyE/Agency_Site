@@ -117,11 +117,11 @@ h3 {
   margin-top: 1rem; }
 
 nav {
-  margin-top: 2.1875em; }
+  margin-top: 2.1875em;
+  margin-bottom: 11.5625em; }
 
 nav ul {
-  float: right;
-  margin-bottom: 11.5625em; }
+  float: right; }
 
 nav ul li {
   display: inline-block;
@@ -144,7 +144,7 @@ a {
   text-align: center;
   margin-bottom: 8rem; }
 
-.hero-content h1 {
+h1 {
   font-family: "Playfair Display", serif;
   font-weight: bold;
   margin-bottom: 3.75rem; }
@@ -242,18 +242,19 @@ a {
   min-height: 46.875em;
   background: #fff; }
 
-.expertise h2, h2 + p {
-  text-align: center; }
-
-.expertise h2 + p {
+.expertise span {
+  display: block;
   font-family: "Playfair Display", serif;
   color: #848386; }
-  .expertise h2 + p:after {
+  .expertise span:after {
     content: '';
     display: block;
     margin: 1rem auto 2rem;
     width: 4em;
     border-bottom: 2px solid #b7b7b8; }
+
+.expertise h2, h2 + span {
+  text-align: center; }
 
 .expertise li {
   float: left;

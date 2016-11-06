@@ -2,11 +2,8 @@
   min-height: 46.875em;
   background: #fff;
 }
-
-.expertise h2, h2 + p {
-  text-align: center;
-}
-.expertise h2 + p {
+.expertise span {
+  display: block;
   font-family: $display-font;
   color: $jumbo;
   &:after {
@@ -17,7 +14,9 @@
     border-bottom: 2px solid lighten($jumbo, 20%);
   }
 }
-
+.expertise h2, h2 + span {
+  text-align: center;
+}
 .expertise li {
   float: left;
   width: 33.33%;
