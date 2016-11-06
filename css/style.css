@@ -65,24 +65,44 @@ table {
   *zoom: 1; }
 
 body {
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem; }
 
 p {
+  font-size: .875rem;
   line-height: 1.5;
   font-weight: 300; }
+
+h1 {
+  font-size: 1.999rem; }
+
+h2 {
+  font-size: 1.414rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif; }
 
 .wrapper {
   width: 60em;
   margin: auto; }
 
+.btn {
+  font-family: "Hammersmith One", sans-serif;
+  color: #00E0D0;
+  padding: .5em;
+  border: 1px solid #00E0D0;
+  border-radius: 2px;
+  display: inline-block; }
+
 .hero {
-  background: linear-gradient(45deg, rgba(9, 5, 48, 0.85), rgba(49, 29, 94, 0.85)), url("../assets/images/hero.jpg") no-repeat fixed center 0;
+  background: linear-gradient(45deg, rgba(9, 5, 48, 0.85), rgba(49, 29, 94, 0.85)), url("../assets/images/hero.jpg") no-repeat center 0;
+  background-size: cover;
   height: 41.875em;
   color: white; }
 
 .logo {
   float: left;
-  margin-top: 1em; }
+  margin-top: 1rem; }
 
 nav {
   margin-top: 2.1875em; }
@@ -97,31 +117,26 @@ nav ul li {
   font-weight: 900;
   text-transform: uppercase; }
 
-.current-page {
-  color: #00e0d0; }
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white; }
+
+.current-page a {
+  color: #00E0D0; }
 
 .hero-content {
   clear: both;
   text-align: center;
-  margin-bottom: 8.125em; }
+  margin-bottom: 8rem; }
 
 .hero-content h1 {
   font-family: "Playfair Display", serif;
-  font-size: 1.999em;
   font-weight: bold;
-  margin-bottom: 1.875em; }
+  margin-bottom: 3.75rem; }
 
 .hero-content p {
-  margin-bottom: 3.125em; }
-
-a {
-  font-family: "Hammersmith One", sans-serif;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #00e0d0;
-  padding: .5em;
-  border: 1px solid #00e0d0;
-  border-radius: 2px; }
+  margin-bottom: 2rem; }
 
 .dot-nav {
   text-align: center; }
@@ -130,7 +145,7 @@ a {
   display: inline-block; }
 
 .solid {
-  background-color: #00e0d0;
+  background-color: #00E0D0;
   height: 1em;
   width: 1em;
   border-radius: 50%; }
@@ -140,5 +155,47 @@ a {
   height: 1em;
   width: 1em;
   border-radius: 50%; }
+
+.about {
+  background: #fff;
+  height: 25em;
+  padding-top: 4.375em; }
+
+.about img {
+  float: left;
+  margin-right: 6.25em;
+  padding-bottom: 6em; }
+
+.about p {
+  margin-bottom: 1rem; }
+
+.video-section {
+  height: 34.375em;
+  background: linear-gradient(45deg, rgba(9, 5, 48, 0.85), rgba(49, 29, 94, 0.85)), url("../assets/images/city.jpg") no-repeat center center;
+  background-size: cover; }
+
+.video-section img {
+  display: block;
+  margin: 0 auto 1rem; }
+
+.video-section .wrapper {
+  height: 100%;
+  text-align: center; }
+
+.video-section .wrapper:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle; }
+
+.video-section-content {
+  color: white;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900; }
+
+.centered {
+  display: inline-block;
+  vertical-align: middle; }
 
 /*# sourceMappingURL=style.css.map */
