@@ -1,7 +1,7 @@
 .about {
   background: #fff;
   min-height: 25em;
-  padding-top: 4.375em;
+  // padding-top: 4.375em;
 }
 .about img {
   float: left;;
@@ -41,6 +41,7 @@
   height: 34.375em;
   background: linear-gradient(45deg, rgba(9, 5, 48, 0.85), rgba(49, 29, 94, 0.85)), url('../assets/images/city.jpg') no-repeat center center;
   background-size: cover;
+  margin-bottom: 3rem;
 }
 .video-section img {
   display: block;
@@ -49,12 +50,12 @@
 .video-section .wrapper {
   height: 100%;
   text-align: center;
-}
-.video-section .wrapper:before {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
+  &:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
 }
 .video-section-content {
   color: white;
