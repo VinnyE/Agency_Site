@@ -8,6 +8,10 @@ $display-font: 'Playfair Display', serif;
 $btn-font: 'Hammersmith One', sans-serif;
 
 // General styles
+section:nth-child(n + 2) {
+  padding-top: 4.375em;
+  padding-bottom: 4.375em;
+}
 body {
   font-family: $font-stack;
   font-size: 1rem;
@@ -28,7 +32,6 @@ h2, h3 {
 h2 {
   font-size: 1.414rem;
   font-family: $display-font;
-  padding-top: 3rem;
 }
 
 h3 {
