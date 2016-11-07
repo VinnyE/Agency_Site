@@ -83,7 +83,8 @@ h2, h3 {
 
 h2 {
   font-size: 1.414rem;
-  font-family: "Playfair Display", serif; }
+  font-family: "Playfair Display", serif;
+  padding-top: 3rem; }
 
 h3 {
   font-family: "Roboto", sans-serif; }
@@ -109,8 +110,7 @@ h3 {
   background: linear-gradient(45deg, rgba(9, 5, 48, 0.85), rgba(49, 29, 94, 0.85)), url("../assets/images/hero.jpg") no-repeat center 0;
   background-size: cover;
   min-height: 41.875em;
-  color: white;
-  margin-bottom: 3rem; }
+  color: white; }
 
 .logo {
   float: left;
@@ -144,7 +144,7 @@ a {
   text-align: center;
   margin-bottom: 8rem; }
 
-h1 {
+.hero-content h1 {
   font-family: "Playfair Display", serif;
   font-weight: bold;
   margin-bottom: 3.75rem; }
@@ -176,8 +176,7 @@ h1 {
 
 .about img {
   float: left;
-  padding-right: 6.25em;
-  padding-bottom: 6em; }
+  padding: 3em 6.25em 6em 0; }
   @media (max-width: 980px) {
     .about img {
       float: none;
@@ -209,8 +208,7 @@ h1 {
 .video-section {
   height: 34.375em;
   background: linear-gradient(45deg, rgba(9, 5, 48, 0.85), rgba(49, 29, 94, 0.85)), url("../assets/images/city.jpg") no-repeat center center;
-  background-size: cover;
-  margin-bottom: 3rem; }
+  background-size: cover; }
 
 .video-section img {
   display: block;
@@ -242,18 +240,18 @@ h1 {
   min-height: 46.875em;
   background: #fff; }
 
-.expertise span {
+.expertise span, .team span {
   display: block;
   font-family: "Playfair Display", serif;
   color: #848386; }
-  .expertise span:after {
+  .expertise span:after, .team span:after {
     content: '';
     display: block;
-    margin: 1rem auto 2rem;
+    margin: 1rem auto 3rem;
     width: 4em;
     border-bottom: 2px solid #b7b7b8; }
 
-.expertise h2, h2 + span {
+.expertise h2, .team h2, h2 + span {
   text-align: center; }
 
 .expertise li {
@@ -284,5 +282,74 @@ h1 {
 
 .expertise img {
   margin-bottom: 2rem; }
+
+.team {
+  background: linear-gradient(45deg, rgba(9, 5, 48, 0.85), rgba(49, 29, 94, 0.85)), url("../assets/images/team.jpg") no-repeat center 0;
+  background-size: cover;
+  min-height: 43.75em; }
+
+.team h2 {
+  color: white; }
+
+.team span {
+  color: #fff; }
+  .team span:after {
+    border-bottom: 2px solid #fff; }
+
+.team ul {
+  margin-bottom: 4rem; }
+
+.team li {
+  float: left;
+  width: 23.5%;
+  height: 19.375em;
+  margin-right: 2%; }
+  .team li:last-child {
+    margin-right: 0; }
+  @media (max-width: 800px) {
+    .team li {
+      width: 35%;
+      margin: 0 7.5%; }
+      .team li:nth-child(-n + 2) {
+        margin-bottom: 5%; } }
+  @media (max-width: 600px) {
+    .team li {
+      float: none;
+      display: block;
+      width: 50%;
+      min-width: 240px;
+      margin: 0 auto 5%; }
+      .team li:nth-child(even) {
+        margin-right: auto; }
+      .team li:last-child {
+        margin-bottom: 0; } }
+
+.team li img {
+  height: 75%;
+  display: block;
+  background: #fff; }
+
+.team li div {
+  height: 25%;
+  border: 1px solid #848386;
+  text-align: center;
+  padding: 1em 1em 2em; }
+
+.team h3 {
+  color: white;
+  margin-bottom: .5rem; }
+
+.team li span {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase; }
+  .team li span:after {
+    border-bottom: none; }
+
+.hiring {
+  text-align: center; }
+
+.hiring p {
+  color: white;
+  margin-bottom: 1rem; }
 
 /*# sourceMappingURL=style.css.map */

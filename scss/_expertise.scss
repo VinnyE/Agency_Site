@@ -2,19 +2,19 @@
   min-height: 46.875em;
   background: #fff;
 }
-.expertise span {
+.expertise span, .team span {
   display: block;
   font-family: $display-font;
   color: $jumbo;
   &:after {
     content: '';
     display: block;
-    margin: 1rem auto 2rem;
+    margin: 1rem auto 3rem;
     width: 4em;
     border-bottom: 2px solid lighten($jumbo, 20%);
   }
 }
-.expertise h2, h2 + span {
+.expertise h2, .team h2, h2 + span {
   text-align: center;
 }
 .expertise li {

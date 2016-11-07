@@ -1,0 +1,75 @@
+.team {
+  background: linear-gradient(45deg, rgba(9, 5, 48, 0.85), rgba(49, 29, 94, 0.85)), url('../assets/images/team.jpg') no-repeat center 0;
+  background-size: cover;
+  min-height: 43.75em;
+}
+.team h2 {
+  color: white;
+}
+.team span {
+  color: #fff;
+  &:after {
+    border-bottom: 2px solid #fff;
+  }
+}
+.team ul {
+  margin-bottom: 4rem;
+}
+.team li {
+  float: left;
+  width: 23.5%;
+  height: 19.375em;
+  margin-right: 2%;
+  &:last-child {
+    margin-right: 0;
+  }
+  @media (max-width: 800px) {
+    width: 35%;
+    margin: 0 7.5%;
+    &:nth-child(-n + 2) {
+      margin-bottom: 5%;
+    }
+  }
+  @media (max-width: 600px) {
+    float: none;
+    display: block;
+    width: 50%;
+    min-width: 240px;
+    margin: 0 auto 5%;
+    &:nth-child(even) {
+      margin-right: auto;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.team li img {
+  height: 75%;
+  display: block;
+  background: #fff;
+}
+.team li div {
+  height: 25%;
+  border: 1px solid $jumbo;
+  text-align: center;
+  padding: 1em 1em 2em;
+}
+.team h3 {
+  color: white;
+  margin-bottom: .5rem;
+}
+.team li span {
+  font-family: $font-stack;
+  text-transform: uppercase;
+  &:after {
+    border-bottom: none;
+  }
+}
+.hiring {
+  text-align: center;
+}
+.hiring p {
+  color: white;
+  margin-bottom: 1rem;
+}
