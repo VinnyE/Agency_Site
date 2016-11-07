@@ -117,7 +117,8 @@ h3 {
 
 .logo {
   float: left;
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  max-width: 8em; }
 
 nav {
   margin-top: 2.1875em;
@@ -179,7 +180,8 @@ a {
 
 .about img {
   float: left;
-  padding: 0 6.25em 4em 0; }
+  padding: 0 6.25em 4em 0;
+  width: 20.9375em; }
   @media (max-width: 980px) {
     .about img {
       float: none;
@@ -216,7 +218,8 @@ a {
 
 .video-section img {
   display: block;
-  margin: 0 auto 1rem; }
+  margin: 0 auto 1rem;
+  max-width: 6.375em; }
 
 .video-section .wrapper {
   height: 100%;
@@ -285,7 +288,8 @@ a {
   color: #848386; }
 
 .expertise img {
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  max-width: 3.125em; }
 
 .team {
   background: linear-gradient(45deg, rgba(9, 5, 48, 0.85), rgba(49, 29, 94, 0.85)), url("../assets/images/background.jpg") no-repeat center 0;

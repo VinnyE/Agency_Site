@@ -5,6 +5,7 @@
 .about img {
   float: left;
   padding: 0 6.25em 4em 0;
+  width: 20.9375em;
   @media (max-width: 980px) {
     float: none;
     display: block;
@@ -44,6 +45,7 @@
 .video-section img {
   display: block;
   margin: 0 auto 1rem;
+  max-width: 6.375em;
 }
 .video-section .wrapper {
   height: 100%;
