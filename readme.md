@@ -1,0 +1,1 @@
+A mock-up of an agency site that I'm currently working on. I started coding this up, and then discovered that there are better ways to structure your CSS. Mainly, modular CSS through SMACSS & BEM. So now the goal is to refactor what's here to make it more modular and use this project to become more familiar with these methodologies. 
