@@ -64,21 +64,17 @@ table {
 .cf {
   *zoom: 1; }
 
-section:nth-child(n + 2) {
-  padding-top: 4.375em;
-  padding-bottom: 4.375em; }
-
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1rem; }
 
 p {
-  font-size: .875rem;
+  font-size: 0.875rem;
   line-height: 1.5;
   font-weight: 300; }
 
 h1 {
-  font-size: 1.999rem; }
+  font-size: 2rem; }
 
 h2, h3 {
   font-weight: 900;
@@ -86,11 +82,34 @@ h2, h3 {
   margin-bottom: 1rem; }
 
 h2 {
-  font-size: 1.414rem;
+  font-size: 1.375rem;
   font-family: "Playfair Display", serif; }
 
 h3 {
   font-family: "Roboto", sans-serif; }
+
+a {
+  text-transform: uppercase;
+  text-decoration: none; }
+
+.l-right {
+  float: right; }
+
+.l-left {
+  float: left; }
+
+.l-a-left {
+  text-align: left; }
+
+.l-a-right {
+  text-align: right; }
+
+.l-a-center {
+  text-align: center; }
+
+.section-padding {
+  padding-top: 4.375em;
+  padding-bottom: 4.375em; }
 
 .wrapper {
   max-width: 60em;
@@ -99,361 +118,110 @@ h3 {
     .wrapper {
       padding: 0 1em; } }
 
-.btn {
-  font-family: "Hammersmith One", sans-serif;
-  color: #00E0D0;
-  padding: .5em;
-  border: 1px solid #00E0D0;
-  border-radius: 2px;
-  display: inline-block; }
-  .btn:hover {
-    opacity: 0.8; }
-
-.hero {
+.l-hero {
   background: linear-gradient(45deg, rgba(9, 5, 48, 0.85), rgba(49, 29, 94, 0.85)), url("../assets/images/hero.jpg") no-repeat center 0;
   background-size: cover;
   min-height: 41.875em;
   color: white; }
 
-.logo {
-  float: left;
-  margin-top: 1rem;
-  max-width: 8em; }
-
-nav {
-  margin-top: 2.1875em;
-  margin-bottom: 11.5625em; }
-
-nav ul {
-  float: right; }
-
-nav ul li {
-  display: inline-block;
-  margin-left: 1.5625em;
-  font-weight: 900;
-  text-transform: uppercase; }
-
-a {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: white; }
-  a:hover {
-    opacity: 0.8; }
-
-.current-page a {
-  color: #00E0D0; }
-
-.hero-content {
-  clear: both;
-  text-align: center;
-  margin-bottom: 8rem; }
-
-.hero-content h1 {
-  font-family: "Playfair Display", serif;
-  font-weight: bold;
-  margin-bottom: 3.75rem; }
-
-.hero-content p {
-  margin-bottom: 2rem; }
-
-.dot-nav {
-  text-align: center; }
-
-.solid, .empty {
-  display: inline-block; }
-
-.solid {
-  background-color: #00E0D0;
-  height: 1em;
-  width: 1em;
-  border-radius: 50%; }
-
-.empty {
-  border: 1px solid white;
-  height: 1em;
-  width: 1em;
-  border-radius: 50%; }
-
-.about {
+.l-about {
   background: #fff;
   min-height: 25em; }
 
-.about img {
-  float: left;
+.l-video {
+  height: 34.375em;
+  background: linear-gradient(45deg, rgba(9, 5, 48, 0.85), rgba(49, 29, 94, 0.85)), url("../assets/images/city.jpg") no-repeat center center;
+  background-size: cover; }
+
+.logo {
+  margin-top: 1rem;
+  max-width: 8em; }
+
+.btn {
+  font-family: "Hammersmith One", sans-serif;
+  color: #00E0D0;
+  padding: 0.5em;
+  border: 1px solid #00E0D0;
+  border-radius: 2px;
+  display: inline-block; }
+
+.nav {
+  margin-top: 2.1875em;
+  margin-bottom: 11.5625em; }
+  .nav__list {
+    float: right; }
+    .nav__list--item {
+      display: inline-block;
+      margin-left: 1.5625em;
+      font-weight: 900;
+      text-transform: uppercase; }
+      .nav__list--item a:hover {
+        opacity: 0.8; }
+
+.carousel-nav {
+  text-align: center; }
+  .carousel-nav__solid, .carousel-nav__empty {
+    display: inline-block; }
+  .carousel-nav__solid {
+    background-color: #00E0D0;
+    height: 1em;
+    width: 1em;
+    border-radius: 50%; }
+  .carousel-nav__empty {
+    border: 1px solid white;
+    height: 1em;
+    width: 1em;
+    border-radius: 50%; }
+
+.hero__intro {
+  clear: both;
+  margin-bottom: 8rem; }
+
+.intro__heading {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  margin-bottom: 3.75rem; }
+
+.intro__paragraph {
+  margin-bottom: 2rem; }
+
+.blurb__logo {
   padding: 0 6.25em 4em 0;
   width: 20.9375em; }
   @media (max-width: 980px) {
-    .about img {
+    .blurb__logo {
       float: none;
       display: block;
       margin: 0 auto;
       padding: 1em; } }
 
-.our-story-blurb {
-  float: left;
-  max-width: 39.0625em; }
+.blurb__story {
+  max-width: 36.0625em; }
   @media (max-width: 980px) {
-    .our-story-blurb {
+    .blurb__story {
       float: none;
       max-width: 100%; } }
 
-.our-story-blurb p {
+@media (max-width: 980px) {
+  .story__title h2 {
+    text-align: center; } }
+
+.story__paragraph {
   margin-bottom: 1rem; }
 
 @media (max-width: 980px) {
-  .our-story-blurb a {
+  .story_btn {
     width: 6.875em;
     display: block;
     margin-left: auto;
     margin-right: auto; } }
 
-@media (max-width: 980px) {
-  .our-story-blurb h2 {
-    text-align: center; } }
-
-.video-section {
-  height: 34.375em;
-  background: linear-gradient(45deg, rgba(9, 5, 48, 0.85), rgba(49, 29, 94, 0.85)), url("../assets/images/city.jpg") no-repeat center center;
-  background-size: cover; }
-
-.video-section img {
+.play-btn {
   display: block;
   margin: 0 auto 1rem;
   max-width: 6.375em; }
 
-.video-section .wrapper {
-  height: 100%;
-  text-align: center; }
-  .video-section .wrapper:before {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle; }
-
-.video-section-content {
-  color: white;
-  text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  cursor: pointer; }
-  .video-section-content:hover {
-    opacity: 0.8; }
-
-.centered {
-  display: inline-block;
-  vertical-align: middle; }
-
-.expertise {
-  min-height: 42.5em;
-  background: #fff; }
-
-.expertise span, .team span {
-  display: block;
-  font-family: "Playfair Display", serif;
-  color: #848386; }
-  .expertise span:after, .team span:after {
-    content: '';
-    display: block;
-    margin: 1rem auto 3rem;
-    width: 4em;
-    border-bottom: 2px solid #b7b7b8; }
-
-.expertise h2, .team h2, h2 + span {
-  text-align: center; }
-
-.expertise li {
-  float: left;
-  width: 33.33%;
-  text-align: center;
-  padding: 2em 1em 2em;
-  border-bottom: 2px solid #eaeaeb; }
-  .expertise li:nth-child(-n+2) {
-    border-right: 2px solid #eaeaeb; }
-  .expertise li:nth-child(4), .expertise li:nth-child(5) {
-    border-right: 2px solid #eaeaeb; }
-  @media (max-width: 980px) {
-    .expertise li {
-      width: 50%; }
-      .expertise li:nth-child(even) {
-        border-right: none; }
-      .expertise li:nth-child(3) {
-        border-right: 2px solid #eaeaeb; } }
-  @media (max-width: 980px) and (max-width: 600px) {
-    .expertise li {
-      width: 100%; }
-      .expertise li:nth-child(odd) {
-        border-right: none; } }
-
-.expertise li p {
-  color: #848386; }
-
-.expertise img {
-  margin-bottom: 2rem;
-  max-width: 3.125em; }
-
-.team {
-  background: linear-gradient(45deg, rgba(9, 5, 48, 0.85), rgba(49, 29, 94, 0.85)), url("../assets/images/background.jpg") no-repeat center 0;
-  background-size: cover;
-  min-height: 43.75em; }
-
-.team h2 {
-  color: white; }
-
-.team span {
-  color: #fff; }
-  .team span:after {
-    border-bottom: 2px solid #fff; }
-
-.team ul {
-  margin-bottom: 4rem; }
-
-.team li {
-  float: left;
-  width: 23.5%;
-  height: 19.375em;
-  margin-right: 2%; }
-  .team li:last-child {
-    margin-right: 0; }
-  @media (max-width: 800px) {
-    .team li {
-      width: 35%;
-      margin: 0 7.5%; }
-      .team li:nth-child(-n + 2) {
-        margin-bottom: 5%; } }
-  @media (max-width: 600px) {
-    .team li {
-      float: none;
-      display: block;
-      width: 50%;
-      min-width: 240px;
-      margin: 0 auto 5%; }
-      .team li:nth-child(even) {
-        margin-right: auto; }
-      .team li:last-child {
-        margin-bottom: 0; } }
-
-.team li img {
-  height: 75%;
-  display: block;
-  background: #fff; }
-
-.team li div {
-  height: 25%;
-  border: 1px solid #848386;
-  text-align: center;
-  padding: 1em 1em 2em; }
-
-.team h3 {
-  color: white;
-  margin-bottom: .5rem; }
-
-.team li span {
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase; }
-  .team li span:after {
-    border-bottom: none; }
-
-.hiring {
-  text-align: center; }
-
-.hiring p {
-  color: white;
-  margin-bottom: 1rem; }
-
-.works {
-  min-height: 41.5em; }
-
-.works h2 {
-  display: inline-block;
-  margin-bottom: 4.375rem; }
-  @media (max-width: 560px) {
-    .works h2 {
-      margin-bottom: 1rem;
-      display: block;
-      text-align: center; } }
-
-.works-heading span {
-  float: right;
-  cursor: pointer; }
-  @media (max-width: 560px) {
-    .works-heading span {
-      padding-top: 0;
-      margin-bottom: 4.375rem;
-      float: none;
-      display: block;
-      text-align: center; } }
-
-.tile-container {
-  height: 25em;
-  margin-bottom: 4.375rem; }
-
-.tile {
-  width: 16.6666667%;
-  height: 50%;
-  float: left; }
-
-.tile-container div:first-child {
-  background-color: #b6b6b6; }
-
-.tile-container div:nth-child(2) {
-  background-color: #acacac; }
-
-.tile-container div:nth-child(3) {
-  background-color: #a1a1a1; }
-
-.tile-container div:nth-child(4) {
-  background-color: #8a8a8a; }
-
-.tile-container div:nth-child(5) {
-  background-color: #b6b6b6; }
-
-.tile-container div:nth-child(6) {
-  background-color: #a4a4a4; }
-
-.tile-container div:nth-child(7) {
-  background-color: #a4a4a4; }
-
-.tile-container div:nth-child(8) {
-  background-color: #b6b6b6; }
-
-.tile-container div:nth-child(9) {
-  background-color: #8a8a8a; }
-
-.tile-container div:nth-child(10) {
-  background-color: #a1a1a1; }
-
-.tile-container div:nth-child(11) {
-  background-color: #acacac; }
-
-.tile-container div:last-child {
-  background-color: #b6b6b6; }
-
-.works a {
-  display: block;
-  width: 6.5em;
-  margin-left: auto;
-  margin-right: auto; }
-
-.testimonials {
-  min-height: 31.25em;
-  background: linear-gradient(45deg, rgba(9, 5, 48, 0.85), rgba(49, 29, 94, 0.85)), url("../assets/images/team.jpg") no-repeat center 0;
-  background-size: cover; }
-
-#quote-mark {
-  font-size: 6rem;
-  color: white;
-  font-family: "Playfair Display", serif;
-  display: block;
-  text-align: center;
-  margin-bottom: .5em;
-  line-height: 1; }
-
-blockquote {
-  text-align: center; }
-
-.testimonials p {
-  font-family: "Playfair Display", serif;
-  color: white;
-  margin-bottom: 3.125rem; }
+.current-page {
+  color: #00E0D0; }
 
 /*# sourceMappingURL=style.css.map */
