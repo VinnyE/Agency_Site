@@ -75,7 +75,7 @@
     max-width: 100%;
   }
 }
-.story__title h2 {
+.story__title {
   @media (max-width: 980px) {
     text-align: center;
   }
@@ -96,3 +96,26 @@
   margin: 0 auto rem(16px);
   max-width: em(102px);
 }
+.l-video .wrapper {
+  // height: 100%;
+  &:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+}
+.l-video__content {
+  color: white;
+  text-transform: uppercase;
+  font-family: $font-family--primary;
+  font-weight: $font-weight--heavy;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+// .centered {
+//   display: inline-block;
+//   vertical-align: middle;
+// }

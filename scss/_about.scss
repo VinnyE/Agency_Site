@@ -37,17 +37,17 @@
 //     text-align: center;
 //   }
 // }
+// .video-section {
+//   height: 34.375em;
+//   background: linear-gradient(45deg, rgba(9, 5, 48, 0.85), rgba(49, 29, 94, 0.85)), url('#{$path--rel}/city.jpg') no-repeat center center;
+//   background-size: cover;
+// }
+// .video-section img {
+//   display: block;
+//   margin: 0 auto 1rem;
+//   max-width: 6.375em;
+// }
 .video-section {
-  height: 34.375em;
-  background: linear-gradient(45deg, rgba(9, 5, 48, 0.85), rgba(49, 29, 94, 0.85)), url('#{$path--rel}/city.jpg') no-repeat center center;
-  background-size: cover;
-}
-.video-section img {
-  display: block;
-  margin: 0 auto 1rem;
-  max-width: 6.375em;
-}
-.video-section .wrapper {
   height: 100%;
   text-align: center;
   &:before {
@@ -67,8 +67,7 @@
     opacity: 0.8;
   }
 }
-
-.centered {
-  display: inline-block;
-  vertical-align: middle;
-}
+// .centered {
+//   display: inline-block;
+//   vertical-align: middle;
+// }
