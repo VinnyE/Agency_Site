@@ -199,6 +199,13 @@ a {
   background: #fff;
 }
 
+/* line 46, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_layout.scss */
+.l-team {
+  background: linear-gradient(45deg, rgba(9, 5, 48, 0.85), rgba(49, 29, 94, 0.85)), url("../assets/images/background.jpg") no-repeat center 0;
+  background-size: cover;
+  min-height: 43.75em;
+}
+
 /* line 1, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
 .logo {
   margin-top: 1rem;
@@ -431,6 +438,91 @@ a {
 .item__icon {
   margin-bottom: 1rem;
   max-width: 3.125em;
+}
+
+/* line 168, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+.list--team {
+  margin-bottom: 4rem;
+}
+
+/* line 171, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+.list--team__item {
+  float: left;
+  width: 23.5%;
+  height: 19.375em;
+  margin-right: 2%;
+}
+
+/* line 176, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+.list--team__item:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 800px) {
+  /* line 171, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+  .list--team__item {
+    width: 35%;
+    margin: 0 7.5%;
+  }
+  /* line 182, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+  .list--team__item:nth-child(-n + 2) {
+    margin-bottom: 5%;
+  }
+}
+
+@media (max-width: 600px) {
+  /* line 171, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+  .list--team__item {
+    float: none;
+    display: block;
+    width: 50%;
+    min-width: 240px;
+    margin: 0 auto 5%;
+  }
+  /* line 192, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+  .list--team__item:nth-child(even) {
+    margin-right: auto;
+  }
+  /* line 195, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+  .list--team__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* line 200, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+.list--team__img {
+  height: 75%;
+  display: block;
+  background: #fff;
+}
+
+/* line 205, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+.list--team__role {
+  height: 25%;
+  border: 1px solid #848386;
+  text-align: center;
+  padding: 1em 1em 2em;
+}
+
+/* line 211, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+.role__name {
+  margin-bottom: .5rem;
+}
+
+/* line 214, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+.role__title {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+/* line 217, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+.role__title:after {
+  border-bottom: none;
+}
+
+/* line 221, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+.hiring p {
+  margin-bottom: 1rem;
 }
 
 /* line 8, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_helpers.scss */
