@@ -1,0 +1,17 @@
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+.c-text-white {
+  color: white;
+}
+.centered {
+  display: inline-block;
+  vertical-align: middle;
+}
+.full-height {
+  height: 100%;
+}

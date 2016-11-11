@@ -1,0 +1,29 @@
+// Font stacks
+$font-family--primary: 'Roboto', sans-serif;
+$font-family--display: 'Playfair Display', serif;
+$font-family--btn: 'Hammersmith One', sans-serif;
+
+// Font weights
+$font-weight--thin: 300;
+$font-weight--normal: 400;
+$font-weight--heavy: 900;
+
+// Descriptive Base Colors
+$white: #fff;
+$sapphire: rgba(9, 5, 48, 0.85);
+$christalle: rgba(49, 29, 94, 0.85);
+$robin-egg-blue: #00E0D0;
+$jumbo: #848386;
+
+// Color Usage
+$color-secondary--text: $white;
+$color-btn: $robin-egg-blue;
+$color-gradient--first: $sapphire;
+$color-gradient--second: $christalle;
+
+// Text
+$base__font-size: 16px;
+$base__line: 24px;
+
+//Path to assets
+$path--rel: '../assets/images';

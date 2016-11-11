@@ -1,0 +1,11 @@
+// Calculate em values
+@function em($target, $context: $base__font-size) {
+  @return ($target/$context) * 1em;
+}
+
+// Calculate rem values
+@function rem($target, $base: $base__font-size) {
+  @return ($target/$base) * 1rem;
+}
+
+// mixins

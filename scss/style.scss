@@ -1,8 +1,19 @@
 @import '_reset.scss';
-@import '_config.scss';
-@import '_hero.scss';
-@import '_about.scss';
-@import '_expertise.scss';
-@import '_team.scss';
-@import '_works.scss';
-@import '_testimonials.scss';
+@import '_utilities';
+@import '_config2.scss';
+@import '_base.scss';
+@import '_layout.scss';
+@import '_modules.scss';
+@import '_helpers.scss';
+@import '_states.scss';
+
+
+
+
+
+// @import '_hero.scss';
+// @import '_about.scss';
+// @import '_expertise.scss';
+// @import '_team.scss';
+// @import '_works.scss';
+// @import '_testimonials.scss';
