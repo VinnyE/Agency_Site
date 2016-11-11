@@ -48,3 +48,15 @@
   background-size: cover;
   min-height: 43.75em;
 }
+.l-works {
+  min-height: 41.5em;
+}
+.l-tile-container {
+  height: 25em;
+  margin-bottom: 4.375rem;
+}
+.l-testimonials {
+  min-height: 31.25em;
+  background: linear-gradient(45deg, rgba(9, 5, 48, 0.85), rgba(49, 29, 94, 0.85)), url('#{$path--rel}/team.jpg') no-repeat center 0;
+  background-size: cover;
+}

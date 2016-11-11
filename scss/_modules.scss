@@ -159,12 +159,6 @@
   margin-bottom: rem(16px);
   max-width: em(50px);
 }
-// .l-team span {
-//   color: #fff;
-//   &:after {
-//     border-bottom: 2px solid #fff;
-//   }
-// }
 .list--team {
   margin-bottom: 4rem;
 }
@@ -197,19 +191,19 @@
     }
   }
 }
-.list--team__img {
+.item--team__img {
   height: 75%;
   display: block;
-  background: #fff;
+  background: $white;
 }
-.list--team__role {
+.item--team__role {
   height: 25%;
   border: 1px solid $jumbo;
   text-align: center;
-  padding: 1em 1em 2em;
+  padding: em(16px) em(16px) em(32px);
 }
 .role__name {
-  margin-bottom: .5rem;
+  margin-bottom: rem(8px);
 }
 .role__title {
   font-family: $font-family--primary;
@@ -218,6 +212,73 @@
     border-bottom: none;
   }
 }
-.hiring p {
-  margin-bottom: 1rem;
+.hiring__text {
+  margin-bottom: rem(16px);
+}
+.heading--works__title {
+  display: inline-block;
+  margin-bottom: rem(70px);
+  @media (max-width: 560px) {
+    margin-bottom: rem(16px);
+    display: block;
+    text-align: center;
+  }
+}
+.heading--works__projects {
+  float: right;
+  cursor: pointer;
+  @media (max-width: 560px) {
+    padding-top: 0;
+    margin-bottom: 4.375rem;
+    float: none;
+    display: block;
+    text-align: center;
+  }
+}
+.tile {
+  width: 16.6666667%;
+  height: 50%;
+  float: left;
+}
+.tile:first-child {
+  background-color: rgb(182,182,182);
+}
+.tile:nth-child(2) {
+  background-color: rgb(172,172,172);
+}
+.tile:nth-child(3) {
+  background-color: rgb(161,161,161);
+}
+.tile:nth-child(4) {
+  background-color: rgb(138,138,138);
+}
+.tile:nth-child(5) {
+  background-color: rgb(182,182,182);
+}
+.tile:nth-child(6) {
+  background-color: rgb(164,164,164);
+}
+.tile:nth-child(7) {
+  background-color: rgb(164,164,164);
+}
+.tile:nth-child(8) {
+  background-color: rgb(182,182,182);
+}
+.tile:nth-child(9) {
+  background-color: rgb(138,138,138);
+}
+.tile:nth-child(10) {
+  background-color: rgb(161,161,161);
+}
+.tile:nth-child(11) {
+  background-color: rgb(172,172,172);
+}
+.tile:last-child {
+  background-color: rgb(182,182,182);
+}
+.l-works__btn {
+  display: block;
+  width: 6.5em;
+  margin-left: auto;
+  margin-right: auto;
 }

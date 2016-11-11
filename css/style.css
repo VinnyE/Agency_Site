@@ -206,6 +206,24 @@ a {
   min-height: 43.75em;
 }
 
+/* line 51, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_layout.scss */
+.l-works {
+  min-height: 41.5em;
+}
+
+/* line 54, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_layout.scss */
+.l-tile-container {
+  height: 25em;
+  margin-bottom: 4.375rem;
+}
+
+/* line 58, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_layout.scss */
+.l-testimonials {
+  min-height: 31.25em;
+  background: linear-gradient(45deg, rgba(9, 5, 48, 0.85), rgba(49, 29, 94, 0.85)), url("../assets/images/team.jpg") no-repeat center 0;
+  background-size: cover;
+}
+
 /* line 1, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
 .logo {
   margin-top: 1rem;
@@ -440,12 +458,12 @@ a {
   max-width: 3.125em;
 }
 
-/* line 168, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+/* line 162, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
 .list--team {
   margin-bottom: 4rem;
 }
 
-/* line 171, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+/* line 165, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
 .list--team__item {
   float: left;
   width: 23.5%;
@@ -453,25 +471,25 @@ a {
   margin-right: 2%;
 }
 
-/* line 176, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+/* line 170, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
 .list--team__item:last-child {
   margin-right: 0;
 }
 
 @media (max-width: 800px) {
-  /* line 171, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+  /* line 165, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
   .list--team__item {
     width: 35%;
     margin: 0 7.5%;
   }
-  /* line 182, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+  /* line 176, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
   .list--team__item:nth-child(-n + 2) {
     margin-bottom: 5%;
   }
 }
 
 @media (max-width: 600px) {
-  /* line 171, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+  /* line 165, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
   .list--team__item {
     float: none;
     display: block;
@@ -479,50 +497,157 @@ a {
     min-width: 240px;
     margin: 0 auto 5%;
   }
-  /* line 192, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+  /* line 186, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
   .list--team__item:nth-child(even) {
     margin-right: auto;
   }
-  /* line 195, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+  /* line 189, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
   .list--team__item:last-child {
     margin-bottom: 0;
   }
 }
 
-/* line 200, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
-.list--team__img {
+/* line 194, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+.item--team__img {
   height: 75%;
   display: block;
   background: #fff;
 }
 
-/* line 205, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
-.list--team__role {
+/* line 199, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+.item--team__role {
   height: 25%;
   border: 1px solid #848386;
   text-align: center;
   padding: 1em 1em 2em;
 }
 
-/* line 211, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+/* line 205, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
 .role__name {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
-/* line 214, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+/* line 208, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
 .role__title {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
 }
 
-/* line 217, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+/* line 211, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
 .role__title:after {
   border-bottom: none;
 }
 
-/* line 221, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
-.hiring p {
+/* line 215, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+.hiring__text {
   margin-bottom: 1rem;
+}
+
+/* line 218, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+.heading--works__title {
+  display: inline-block;
+  margin-bottom: 4.375rem;
+}
+
+@media (max-width: 560px) {
+  /* line 218, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+  .heading--works__title {
+    margin-bottom: 1rem;
+    display: block;
+    text-align: center;
+  }
+}
+
+/* line 227, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+.heading--works__projects {
+  float: right;
+  cursor: pointer;
+}
+
+@media (max-width: 560px) {
+  /* line 227, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+  .heading--works__projects {
+    padding-top: 0;
+    margin-bottom: 4.375rem;
+    float: none;
+    display: block;
+    text-align: center;
+  }
+}
+
+/* line 238, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+.tile {
+  width: 16.6666667%;
+  height: 50%;
+  float: left;
+}
+
+/* line 243, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+.tile:first-child {
+  background-color: #b6b6b6;
+}
+
+/* line 246, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+.tile:nth-child(2) {
+  background-color: #acacac;
+}
+
+/* line 249, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+.tile:nth-child(3) {
+  background-color: #a1a1a1;
+}
+
+/* line 252, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+.tile:nth-child(4) {
+  background-color: #8a8a8a;
+}
+
+/* line 255, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+.tile:nth-child(5) {
+  background-color: #b6b6b6;
+}
+
+/* line 258, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+.tile:nth-child(6) {
+  background-color: #a4a4a4;
+}
+
+/* line 261, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+.tile:nth-child(7) {
+  background-color: #a4a4a4;
+}
+
+/* line 264, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+.tile:nth-child(8) {
+  background-color: #b6b6b6;
+}
+
+/* line 267, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+.tile:nth-child(9) {
+  background-color: #8a8a8a;
+}
+
+/* line 270, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+.tile:nth-child(10) {
+  background-color: #a1a1a1;
+}
+
+/* line 273, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+.tile:nth-child(11) {
+  background-color: #acacac;
+}
+
+/* line 276, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+.tile:last-child {
+  background-color: #b6b6b6;
+}
+
+/* line 279, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+.l-works__btn {
+  display: block;
+  width: 6.5em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* line 8, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_helpers.scss */
