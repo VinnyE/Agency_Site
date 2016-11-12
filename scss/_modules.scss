@@ -1,4 +1,4 @@
-.logo {
+.main-logo {
   margin-top: rem(16px);
   max-width: em(128px);
 }
@@ -68,6 +68,7 @@
 .blurb__logo {
   padding: 0 em(100px) em(64px) 0;
   width: em(335px);
+  max-width: 100%;
   @media (max-width: 980px) {
     float: none;
     display: block;
@@ -306,6 +307,7 @@
 }
 .testimonial-people__img {
   padding: 0 em(4px);
+  max-width: 100%;
   &:nth-child(4) {
     vertical-align: em(-16px);
   }
@@ -313,10 +315,12 @@
 .arr--left {
   margin-right: em(24px);
   vertical-align: em(12px);
+  max-width: 100%;
 }
 .arr--right {
   margin-left: em(24px);
   vertical-align: em(12px);
+  max-width: 100%;
 }
 .form-container {
   width: 100 / (960/460) * 1%;
@@ -326,9 +330,6 @@
     float: none;
     width: 100%;
     margin-bottom: rem(36px);
-    // @media (max-width: 500px) {
-    //
-    // }
   }
 }
 .contact__title {
@@ -401,7 +402,150 @@
   vertical-align: -20px
 }
 .logo {
+  max-width: 100%;
   @media (max-width: 500px){
     vertical-align: middle;
+  }
+}
+.body--footer {
+  display: inline-block;
+  width: 35%;
+  &:nth-child(n + 2) {
+    vertical-align: top;
+    padding-top: 24px;
+  }
+  &:nth-child(-n + 2) {
+    margin-right: 2%;
+  }
+  &:nth-child(2) {
+    width: 26%;
+  }
+  &:nth-child(3) {
+    padding-left: em(46px);
+  }
+  @media (max-width: 980px) {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    &:nth-child(-n + 2) {
+      margin: 0 auto;
+    }
+    &:nth-child(2) {
+      width: 50%;
+    }
+    &:nth-child(3) {
+      padding-left: 0;
+    }
+  }
+}
+.logo--footer {
+  margin-bottom: rem(16px);
+}
+.icon {
+  margin-right: 10px;
+}
+.body--footer__paragraph {
+  margin-bottom: rem(16px);
+  padding-left: em(32px);
+  position: relative;
+  &:before {
+    content: "";
+    background: url('#{$path--rel}/location.png') no-repeat center;
+    height: em(22px);
+    width: em(20px);
+    position: absolute;
+    left: 0;
+  }
+  @media (max-width: 980px) {
+    padding-left: 0;
+    &:before {
+      left: -15px;
+    }
+  }
+  @media (max-width: 785px) {
+    &:before {
+      left: -6%;
+    }
+    @media (max-width: 745px) {
+      &:before {
+        left: -3%;
+      }
+    }
+  }
+  @media (max-width: 670px) {
+    padding-left: 0;
+    &:before {
+      left: -20px;
+    }
+  }
+}
+.body--footer__tel {
+  padding-left: em(32px);
+  position: relative;
+  &:before {
+    content:"";
+    background: url('#{$path--rel}/phone.png') no-repeat center;
+    height: em(22px);
+    width: em(20px);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  @media (max-width: 525px) {
+    padding-left: 0;
+    &:before {
+      left: -30px;
+    }
+  }
+}
+.footer--title {
+  margin-bottom: rem(26px);
+}
+.footer__input {
+  border: 1px solid #eaeaeb;
+  font-size: 16px;
+  border-radius: 1px;
+  background: none;
+  padding: rem(12px);
+  width: em(210px);
+  color: white;
+  font-family: $font-family--primary;
+  outline: none;
+  vertical-align: top;
+  margin-right: 5px;
+  margin-bottom: rem(26px);
+  @media (max-width: 630px) {
+    margin-bottom: rem(16px);
+    width: 100%;
+    font-size: 14px;
+  }
+  @media (max-width: 425px) {
+    font-size: 12px;
+  }
+}
+.btn--subscribe {
+  cursor: pointer;
+  @media (max-width: 630px) {
+    margin-bottom: rem(16px);
+  }
+}
+.list--footer {
+  @media (max-width: 980px) {
+    text-align: center;
+  }
+}
+.item--footer {
+  float: left;
+  margin-right: em(8px);
+  cursor: pointer;
+  @media (max-width: 980px) {
+    margin-right: 0;
+    width: (100 / 6) * 1%;
+    text-align: center;
+  }
+  @media (max-width: 565px) {
+    width: (100 / 3) * 1%;
+    margin-bottom: rem(8px);
   }
 }
