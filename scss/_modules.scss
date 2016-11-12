@@ -278,7 +278,36 @@
 }
 .l-works__btn {
   display: block;
-  width: 6.5em;
+  width: em(104px);
   margin-left: auto;
   margin-right: auto;
+}
+.quote-mark {
+  font-size: rem(96px);
+  font-family: $font-family--display;
+  line-height: 1;
+}
+.quote-block__paragraph {
+  font-family: $font-family--display;
+  margin-bottom: 3.125rem;
+}
+.testimonials__title {
+  margin-bottom: rem(4px);
+}
+.testimonials__role {
+  margin-bottom: rem(45px);
+}
+.testimonial-people__img {
+  padding: 0 .25em;
+  &:nth-child(4) {
+    vertical-align: -1em;
+  }
+}
+.arr--left {
+  margin-right: 1.5em;
+  vertical-align: .75em;
+}
+.arr--right {
+  margin-left: 1.5em;
+  vertical-align: .75em;
 }

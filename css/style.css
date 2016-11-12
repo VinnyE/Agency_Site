@@ -177,7 +177,7 @@ a {
   background: linear-gradient(45deg, rgba(9, 5, 48, 0.85), rgba(49, 29, 94, 0.85)), url("../assets/images/hero.jpg") no-repeat center 0;
   background-size: cover;
   min-height: 41.875em;
-  color: white;
+  padding-bottom: 4.375em;
 }
 
 /* line 33, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_layout.scss */
@@ -648,6 +648,51 @@ a {
   width: 6.5em;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* line 285, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+.quote-mark {
+  font-size: 6rem;
+  font-family: "Playfair Display", serif;
+  line-height: 1;
+}
+
+/* line 290, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+.quote-block__paragraph {
+  font-family: "Playfair Display", serif;
+  margin-bottom: 3.125rem;
+}
+
+/* line 294, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+.testimonials__title {
+  margin-bottom: 0.25rem;
+}
+
+/* line 297, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+.testimonials__role {
+  margin-bottom: 2.8125rem;
+}
+
+/* line 300, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+.testimonial-people__img {
+  padding: 0 .25em;
+}
+
+/* line 302, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+.testimonial-people__img:nth-child(4) {
+  vertical-align: -1em;
+}
+
+/* line 306, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+.arr--left {
+  margin-right: 1.5em;
+  vertical-align: .75em;
+}
+
+/* line 310, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_modules.scss */
+.arr--right {
+  margin-left: 1.5em;
+  vertical-align: .75em;
 }
 
 /* line 8, C:/Users/Vianel/Desktop/Learning/Agency_Site/scss/_helpers.scss */
