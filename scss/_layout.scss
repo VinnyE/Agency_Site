@@ -21,7 +21,7 @@
   max-width: em(960px);
   margin: auto;
   @media (max-width: 980px) {
-    padding: 0 1em;
+    padding: 0 em(16px);
   }
 }
 .l-hero {
@@ -31,32 +31,37 @@
   padding-bottom: em(70px);
 }
 .l-about {
-  background: #fff;
-  min-height: 25em;
+  background: $white;
+  min-height: em(400px);
 }
 .l-video {
-  height: 34.375em;
+  height: em(550px);
   background: linear-gradient(45deg, rgba(9, 5, 48, 0.85), rgba(49, 29, 94, 0.85)), url('#{$path--rel}/city.jpg') no-repeat center center;
   background-size: cover;
 }
 .l-expertise {
-  min-height: 42.5em;
-  background: #fff;
+  min-height: em(680px);
+  background: $white;
 }
 .l-team {
   background: linear-gradient(45deg, rgba(9, 5, 48, 0.85), rgba(49, 29, 94, 0.85)), url('#{$path--rel}/background.jpg') no-repeat center 0;
   background-size: cover;
-  min-height: 43.75em;
+  min-height: em(700px);
 }
 .l-works {
-  min-height: 41.5em;
+  min-height: em(664px);
+  background: $white;
 }
 .l-tile-container {
-  height: 25em;
-  margin-bottom: 4.375rem;
+  height: em(400px);
+  margin-bottom: rem(70px);
 }
 .l-testimonials {
-  min-height: 31.25em;
+  min-height: em(500px);
   background: linear-gradient(45deg, rgba(9, 5, 48, 0.85), rgba(49, 29, 94, 0.85)), url('#{$path--rel}/team.jpg') no-repeat center 0;
   background-size: cover;
+}
+.l-contact {
+  min-height: em(654px);
+  background: $white;
 }
