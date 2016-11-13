@@ -1,6 +1,16 @@
 .main-logo {
-  margin-top: rem(16px);
+  padding-top: em(16px);
   max-width: em(128px);
+  float: left;
+  @media (max-width: 980px) {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+  @media (max-width: 715px) {
+    float: left;
+    margin-bottom: 8rem;
+  }
 }
 .btn {
   font-family: $font-family--btn;
@@ -19,22 +29,87 @@
 }
 .nav {
   margin-top: em(35px);
-  margin-bottom: em(185px);
-  &__list {
-      float: right;
-      &--item {
-        display: inline-block;
-        margin-left: em(25px);
-        font-weight: $font-weight--heavy;
-        text-transform: uppercase;
-        a {
-          &:hover {
-            opacity: 0.8;
-          }
-        }
-      }
+  margin-bottom: rem(185px);
+  float: right;
+  @media (max-width: 980px) {
+    float: none;
+    text-align: center;
+    margin-top: em(16px);
+  }
+  @media (max-width: 715px) {
+    display: none;
   }
 }
+.list-item--header {
+  display: inline-block;
+  margin-left: em(25px);
+  font-weight: $font-weight--heavy;
+  text-transform: uppercase;
+  &:first-child {
+    margin-left: 0;
+  }
+  a {
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+.nav--mobile {
+  display: none;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  @media (max-width: 715px) {
+    display: block;
+  }
+}
+.nav__list--mobile {
+  display: none;
+}
+.list-item--mobile {
+  font-weight: $font-weight--heavy;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, rgba(9, 5, 48, 0.98), rgba(49, 29, 94, 0.98));
+  border-bottom: 1px solid darken(#fff, 25%);
+  &:last-child {
+    border-bottom: none;
+  }
+  a {
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  &__link {
+    display: block;
+    padding: 1.75em 0;
+    &:hover {
+      background: rgba(9, 5, 48, 0.95);
+    }
+  }
+}
+#hamburger-menu {
+  position: absolute;
+  top: em(10px);
+  border: 0;
+  right: em(13px);
+  outline: none;
+  background: none;
+  font-size: 2em;
+  cursor: pointer;
+  z-index: 1;
+  color: $robin-egg-blue;
+  border: 1px solid $robin-egg-blue;
+  border-radius: 5px;
+  padding: 0 em(4px);
+  transition: all 400ms ease;
+  &.open {
+    transform: rotate(90deg);
+    top: em(8px);
+  }
+}
+
 .carousel-nav {
   text-align: center;
   &__solid, &__empty {
@@ -311,16 +386,29 @@
   &:nth-child(4) {
     vertical-align: em(-16px);
   }
+  @media (max-width: 450px) {
+    &:nth-child(3), &:nth-child(5) {
+      display: none;
+    }
+  }
 }
 .arr--left {
   margin-right: em(24px);
   vertical-align: em(12px);
   max-width: 100%;
+  cursor: pointer;
+  @media (max-width: 450px) {
+    margin-right: 5%;
+  }
 }
 .arr--right {
   margin-left: em(24px);
   vertical-align: em(12px);
   max-width: 100%;
+  cursor: pointer;
+  @media (max-width: 450px) {
+    margin-left: 5%;
+  }
 }
 .form-container {
   width: 100 / (960/460) * 1%;

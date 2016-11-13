@@ -11,16 +11,41 @@
   <body>
     <section class="l-hero c-text-white">
       <div class="wrapper cf">
-        <img class="main-logo l-left" src="../assets/images/logo.png" />
-        <nav class="nav cf">
+        <img class="main-logo" src="../assets/images/logo.png" />
+        <nav class="nav cf ">
           <ul class="nav__list">
-            <li class="nav__list--item"><a href="" class="link--hover current-page">Home</a></li>
-            <li class="nav__list--item"><a href="" class="c-text-white">About</a></li>
-            <li class="nav__list--item"><a href="" class="c-text-white">Expertise</a></li>
-            <li class="nav__list--item"><a href="" class="c-text-white">Teams</a></li>
-            <li class="nav__list--item"><a href="" class="c-text-white">Works</a></li>
-            <li class="nav__list--item"><a href="" class="c-text-white">People Say</a></li>
-            <li class="nav__list--item"><a href="" class="c-text-white">Contact</a></li>
+            <li class="list-item--header"><a href="" class="link--hover current-page">Home</a></li>
+            <li class="list-item--header"><a href="" class="c-text-white">About</a></li>
+            <li class="list-item--header"><a href="" class="c-text-white">Expertise</a></li>
+            <li class="list-item--header"><a href="" class="c-text-white">Teams</a></li>
+            <li class="list-item--header"><a href="" class="c-text-white">Works</a></li>
+            <li class="list-item--header"><a href="" class="c-text-white">People Say</a></li>
+            <li class="list-item--header"><a href="" class="c-text-white">Contact</a></li>
+          </ul>
+        </nav>
+        <nav class="nav--mobile cf">
+          <button id="hamburger-menu">&#x2261;</button>
+
+          <ul class="nav__list--mobile">
+            <li class="list-item--mobile">
+              <a href="" class="current-page list-item--mobile__link">Home</a>
+            </li>
+            <li class="list-item--mobile">
+              <a href="" class="c-text-white list-item--mobile__link">About</a></li>
+            <li class="list-item--mobile">
+              <a href="" class="c-text-white list-item--mobile__link">Expertise</a></li>
+            <li class="list-item--mobile">
+              <a href="" class="c-text-white list-item--mobile__link">Teams</a>
+            </li>
+            <li class="list-item--mobile">
+              <a href="" class="c-text-white list-item--mobile__link">Works</a>
+            </li>
+            <li class="list-item--mobile">
+              <a href="" class="c-text-white list-item--mobile__link">People Say</a>
+            </li>
+            <li class="list-item--mobile">
+              <a href="" class="c-text-white list-item--mobile__link">Contact</a>
+            </li>
           </ul>
         </nav>
 
@@ -269,6 +294,10 @@
 
       </div>
     </footer>
-
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
