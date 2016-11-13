@@ -2,49 +2,69 @@
 <html lang="en">
 <head>
   <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Playfair+Display:400,900|Roboto:300,900" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-min.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Agency</title>
 </head>
+
   <body>
-    <section class="l-hero c-text-white">
+
+    <header class="l-hero c-text-white" id="home">
       <div class="wrapper cf">
-        <img class="main-logo" src="../assets/images/logo.png" />
+        <a href="#home">
+        <img class="main-logo" src="../assets/images/logo.png" alt="Main logo."/>
+        </a>
+
         <nav class="nav cf ">
           <ul class="nav__list">
-            <li class="list-item--header"><a href="" class="link--hover current-page">Home</a></li>
-            <li class="list-item--header"><a href="" class="c-text-white">About</a></li>
-            <li class="list-item--header"><a href="" class="c-text-white">Expertise</a></li>
-            <li class="list-item--header"><a href="" class="c-text-white">Teams</a></li>
-            <li class="list-item--header"><a href="" class="c-text-white">Works</a></li>
-            <li class="list-item--header"><a href="" class="c-text-white">People Say</a></li>
-            <li class="list-item--header"><a href="" class="c-text-white">Contact</a></li>
+            <li class="list-item--header">
+              <a href="#home" class="link--hover c-text-white list-item__link">Home</a>
+            </li>
+            <li class="list-item--header">
+              <a href="#about" class="c-text-white list-item__link">About</a>
+            </li>
+            <li class="list-item--header">
+              <a href="#expertise" class="c-text-white list-item__link">Expertise</a>
+            </li>
+            <li class="list-item--header">
+              <a href="#team" class="c-text-white list-item__link">Teams</a>
+            </li>
+            <li class="list-item--header">
+              <a href="#works" class="c-text-white list-item__link">Works</a>
+            </li>
+            <li class="list-item--header">
+              <a href="#testimonials" class="c-text-white list-item__link">People Say</a>
+            </li>
+            <li class="list-item--header">
+              <a href="#contact" class="c-text-white list-item__link">Contact</a>
+            </li>
           </ul>
         </nav>
+
         <nav class="nav--mobile cf">
           <button id="hamburger-menu">&#x2261;</button>
 
           <ul class="nav__list--mobile">
             <li class="list-item--mobile">
-              <a href="" class="current-page list-item--mobile__link">Home</a>
+              <a href="#home" class="current-page list-item--mobile__link c-text-white">Home</a>
             </li>
             <li class="list-item--mobile">
-              <a href="" class="c-text-white list-item--mobile__link">About</a></li>
+              <a href="#about" class="c-text-white list-item--mobile__link">About</a></li>
             <li class="list-item--mobile">
-              <a href="" class="c-text-white list-item--mobile__link">Expertise</a></li>
+              <a href="#expertise" class="c-text-white list-item--mobile__link">Expertise</a></li>
             <li class="list-item--mobile">
-              <a href="" class="c-text-white list-item--mobile__link">Teams</a>
+              <a href="#team" class="c-text-white list-item--mobile__link">Teams</a>
             </li>
             <li class="list-item--mobile">
-              <a href="" class="c-text-white list-item--mobile__link">Works</a>
+              <a href="#works" class="c-text-white list-item--mobile__link">Works</a>
             </li>
             <li class="list-item--mobile">
-              <a href="" class="c-text-white list-item--mobile__link">People Say</a>
+              <a href="#testimonials" class="c-text-white list-item--mobile__link">People Say</a>
             </li>
             <li class="list-item--mobile">
-              <a href="" class="c-text-white list-item--mobile__link">Contact</a>
+              <a href="#contact" class="c-text-white list-item--mobile__link">Contact</a>
             </li>
           </ul>
         </nav>
@@ -66,12 +86,12 @@
 
       </div>
 
-    </section>
-    <section class="l-about section-padding">
+    </header>
+    <section class="l-about section-padding" id="about">
       <div class="wrapper">
         <div class="about-blurb cf">
-          <img class="blurb__logo l-left" src="../assets/images/triangle.png" alt="" />
-          <div class="blurb__story l-left">
+          <img class="blurb__logo" src="../assets/images/triangle.png" alt="A triangular logo of the company." />
+          <div class="blurb__story ">
             <h2 class="story__title">Our Story</h2>
             <p class="story__paragraph">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 
@@ -82,17 +102,17 @@
         </div>
       </div>
     </section>
-    <section class="l-video section-padding">
+    <section class="l-video section-padding" >
       <div class="wrapper--video full-height l-a-center">
 
           <div class="l-video__content centered t-a-center">
-              <img class= "play-btn" src="../assets/images/play-button.png" />
+              <img class= "play-btn" src="../assets/images/play-button.png" alt="A play button." />
               <span>Watch Our Story</span>
           </div>
 
       </div>
     </section>
-    <section class="l-expertise section-padding">
+    <section class="l-expertise section-padding" id="expertise">
       <div class="wrapper">
 
         <h2 class="l-a-center">Expertise</h2>
@@ -102,32 +122,32 @@
 
         <ul class="list cf">
           <li class="list__item l-a-center">
-            <img src="../assets/images/icon1.png" alt="" class="item__icon">
+            <img src="../assets/images/icon1.png" alt="A computer monitor icon." class="item__icon">
             <h3>Web Design &amp; Development</h3>
             <p class="item__paragraph">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
           </li>
           <li class="list__item l-a-center">
-            <img src="../assets/images/icon-2.png" alt="" class="item__icon">
+            <img src="../assets/images/icon-2.png" alt="A paint brush icon." class="item__icon">
             <h3>Branding Identity</h3>
             <p class="item__paragraph">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
           </li>
           <li class="list__item l-a-center">
-            <img src="../assets/images/icon-3.png" alt="" class="item__icon">
+            <img src="../assets/images/icon-3.png" alt="A cellphone icon." class="item__icon">
             <h3>Mobile App</h3>
             <p class="item__paragraph">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
           </li>
           <li class="list__item l-a-center">
-            <img src="../assets/images/icon4.png" alt="" class="item__icon">
+            <img src="../assets/images/icon4.png" alt="A circular graph icon." class="item__icon">
             <h3>Search Engine Optimization</h3>
             <p class="item__paragraph">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
           </li>
           <li class="list__item l-a-center">
-            <img src="../assets/images/icon5.png" alt="" class="item__icon">
+            <img src="../assets/images/icon5.png" alt="A gameboy icon." class="item__icon">
             <h3>Game Development</h3>
             <p class="item__paragraph">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
           </li>
           <li class="list__item l-a-center">
-            <img src="../assets/images/icon6.png" alt="" class="item__icon">
+            <img src="../assets/images/icon6.png" alt="A heart icon." class="item__icon">
             <h3>Made With Love</h3>
             <p class="item__paragraph">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
           </li>
@@ -135,34 +155,34 @@
 
       </div>
     </section>
-    <section class="l-team section-padding">
+    <section class="l-team section-padding" id="team">
       <div class="wrapper">
         <h2 class="l-a-center c-text-white">Meet Our Amazing Team</h2>
         <p class="l-a-center"><span class="tagline c-text-white">Lorem ipsum dolor sit amet proin gravida nibh vel velit</span></p>
         <ul class="list--team cf">
           <li class="list--team__item">
-            <img src="" alt="" class="item--team__img">
+            <img src="" alt="Empty placeholder." class="item--team__img">
             <div class="item--team__role">
               <h3 class="role__name c-text-white">Semf Ucuk</h3>
               <span class="role__title c-text-white">Ceo &amp; Founder</span>
             </div>
           </li>
           <li class="list--team__item">
-            <img src="" alt="" class="item--team__img">
+            <img src="" alt="Empty placeholder." class="item--team__img">
             <div class="item--team__role">
               <h3 class="role__name c-text-white">Dik Adalin</h3>
               <span class="role__title c-text-white">Engineering</span>
             </div>
           </li>
           <li class="list--team__item">
-            <img src="" alt="" class="item--team__img">
+            <img src="" alt="Empty placeholder." class="item--team__img">
             <div class="item--team__role">
               <h3 class="role__name c-text-white">Jeng Kol</h3>
               <span class="role__title c-text-white">Designer</span>
             </div>
           </li>
           <li class="list--team__item">
-            <img src="" alt="" class="item--team__img">
+            <img src="" alt="Empty placeholder." class="item--team__img">
             <div class="item--team__role">
               <h3 class="role__name c-text-white">Pet Romak</h3>
               <span class="role__title c-text-white">Marketing</span>
@@ -176,7 +196,7 @@
 
       </div>
     </section>
-    <section class="l-works section-padding">
+    <section class="l-works section-padding" id="works">
       <div class="wrapper">
         <div class="heading--works cf">
           <h2 class="heading--works__title">Our Works</h2>
@@ -199,7 +219,7 @@
       </div>
       <a href="" class="btn l-works__btn">Load More</a>
     </section>
-    <section class="l-testimonials section-padding">
+    <section class="l-testimonials section-padding" id="testimonials">
       <div class="wrapper">
         <p class="l-a-center"><span class="quote-mark c-text-white">&ldquo;</span></p>
         <blockquote class="quote-block l-a-center">
@@ -212,17 +232,17 @@
         </p>
 
         <div class="testimonial-people l-a-center">
-          <img class="arr--left"src="../assets/images/leftArr.png" alt="">
-          <img class="testimonial-people__img" src="../assets/images/person1.png" alt="">
-          <img class="testimonial-people__img" src="../assets/images/person2.png" alt="">
-          <img class="testimonial-people__img" src="../assets/images/person3.png" alt="">
-          <img class="testimonial-people__img" src="../assets/images/person5.png" alt="">
-          <img class="testimonial-people__img" src="../assets/images/person6.png" alt="">
-          <img class="arr--right" src="../assets/images/rightArr.png" alt="">
+          <img class="arr--left" src="../assets/images/leftArr.png" alt="Left arrow icon.">
+          <img class="testimonial-people__img" src="../assets/images/person1.png" alt="A headshot of a woman.">
+          <img class="testimonial-people__img" src="../assets/images/person2.png" alt="A headshot of a man.">
+          <img class="testimonial-people__img" src="../assets/images/person3.png" alt="A headshot of a woman.">
+          <img class="testimonial-people__img" src="../assets/images/person5.png" alt="A headshot of a woman.">
+          <img class="testimonial-people__img" src="../assets/images/person6.png" alt="A headshot of a man.">
+          <img class="arr--right" src="../assets/images/rightArr.png" alt="Right arrow icon.">
         </div>
       </div>
     </section>
-    <section class="l-contact section-padding">
+    <section class="l-contact section-padding" id="contact">
       <div class="wrapper cf">
 
         <div class="form-container ">
@@ -248,7 +268,7 @@
           <li class="list__item--clients"><img src="../assets/images/converse.png" alt="" class="logo"></li>
           <li class="list__item--clients"><img src="../assets/images/puma.png" alt="" class="logo--puma logo"></li>
           <li class="list__item--clients"><img src="../assets/images/levi.png" alt="" class="logo--levi logo"></li>
-          <li class="list__item--clients"><img src="../assets/images/billabong.png" alt="" class="logo"></li>
+          <li class="list__item--clients"><img src="../assets/images/billabong.png" alt="Main company logo." class="logo"></li>
         </ul>
       </div>
 
@@ -259,7 +279,9 @@
 
         <div class="footer__body">
           <div class="body--footer c-text-white">
-            <img src="../assets/images/logo.png" class="logo--footer"/>
+            <a href="#home">
+            <img src="../assets/images/logo.png" class="logo--footer" alt="Main logo."/>
+            </a>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
@@ -268,11 +290,9 @@
         --><div class="body--footer c-text-white">
             <h3 class="footer--title">Our Studio</h3>
             <p class="body--footer__paragraph">
-              <!-- <img src="../assets/images/location.png" alt="" class="icon"> -->
               Ruko cucruk, Jl. radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat 11480 - Indonesia
             </p>
             <span class="body--footer__tel">
-              <!-- <img src="../assets/images/phone.png" alt="" class="icon"> -->
               (+62) 21-2224 3333
             </span>
           </div><!--
@@ -280,14 +300,14 @@
         --><div class="body--footer c-text-white">
             <h3 class="footer--title">Stay in touch</h3>
             <input type="text" placeholder="Subscribe our newsletter" class="footer__input l-a-center"/>
-            <img src="../assets/images/email.png" alt="" class="btn--subscribe">
+            <img src="../assets/images/email.png" alt="An email icon." class="btn--subscribe">
             <ul class="list--footer cf">
-              <li class="item--footer"><img src="../assets/images/fb.png" alt=""></li>
-              <li class="item--footer"><img src="../assets/images/twitter.png" alt=""></li>
-              <li class="item--footer"><img src="../assets/images/ball.png" alt=""></li>
-              <li class="item--footer"><img src="../assets/images/ig.png" alt=""></li>
-              <li class="item--footer"><img src="../assets/images/gplus.png" alt=""></li>
-              <li class="item--footer"><img src="../assets/images/youtube.png" alt=""></li>
+              <li class="item--footer"><img src="../assets/images/fb.png" alt="Facebook icon."></li>
+              <li class="item--footer"><img src="../assets/images/twitter.png" alt="Twitter icon."></li>
+              <li class="item--footer"><img src="../assets/images/ball.png" alt="Social icon."></li>
+              <li class="item--footer"><img src="../assets/images/ig.png" alt="Instagram icon."></li>
+              <li class="item--footer"><img src="../assets/images/gplus.png" alt="Google plus icon."></li>
+              <li class="item--footer"><img src="../assets/images/youtube.png" alt="YouTube icon."></li>
             </ul>
           </div>
         </div>

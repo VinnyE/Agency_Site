@@ -1,3 +1,5 @@
 $('#hamburger-menu').click(function() {
-  $(this).toggleClass('open').siblings('ul').slideToggle();
+  $(this).toggleClass('is-open').siblings('ul').slideToggle();
 });
+
+ //

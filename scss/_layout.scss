@@ -1,9 +1,3 @@
-.l-right {
-  float: right;
-}
-.l-left {
-  float: left;
-}
 .l-a-left {
   text-align: left;
 }
@@ -25,6 +19,7 @@
   }
 }
 .l-hero {
+  background: rgba(9, 5, 48, 0.85);
   background: linear-gradient(45deg, rgba(9, 5, 48, 0.85), rgba(49, 29, 94, 0.85)), url('#{$path--rel}/hero.jpg') no-repeat center 0;
   background-size: cover;
   min-height: em(670px);
@@ -36,6 +31,7 @@
 }
 .l-video {
   height: em(550px);
+  background: rgba(9, 5, 48, 0.85);
   background: linear-gradient(45deg, rgba(9, 5, 48, 0.85), rgba(49, 29, 94, 0.85)), url('#{$path--rel}/city.jpg') no-repeat center center;
   background-size: cover;
 }
@@ -44,6 +40,7 @@
   background: $white;
 }
 .l-team {
+  background: rgba(9, 5, 48, 0.85);
   background: linear-gradient(45deg, rgba(9, 5, 48, 0.85), rgba(49, 29, 94, 0.85)), url('#{$path--rel}/background.jpg') no-repeat center 0;
   background-size: cover;
   min-height: em(700px);
@@ -58,6 +55,7 @@
 }
 .l-testimonials {
   min-height: em(500px);
+  background: rgba(9, 5, 48, 0.85);
   background: linear-gradient(45deg, rgba(9, 5, 48, 0.85), rgba(49, 29, 94, 0.85)), url('#{$path--rel}/team.jpg') no-repeat center 0;
   background-size: cover;
 }
@@ -65,11 +63,12 @@
   min-height: em(654px);
   background: $white;
   @media(max-width: 500px) {
-    min-height: em(1450px);
+    min-height: em(1475px);
   }
 }
 .l-footer {
   min-height: em(400px);
+  background: rgba(9, 5, 48, 0.85);
   background: linear-gradient(45deg, rgba(9, 5, 48, 0.85), rgba(49, 29, 94, 0.85)), url('#{$path--rel}/footer.jpg') no-repeat center 0;
-    background-size: cover;
+  background-size: cover;
 }

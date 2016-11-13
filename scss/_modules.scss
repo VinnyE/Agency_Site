@@ -19,6 +19,9 @@
   border: 1px solid $color-btn;
   border-radius: 2px;
   display: inline-block;
+  &:hover {
+    opacity: 0.8;
+  }
 }
 .btn--contact {
   width: em(120px);
@@ -104,10 +107,6 @@
   border-radius: 5px;
   padding: 0 em(4px);
   transition: all 400ms ease;
-  &.open {
-    transform: rotate(90deg);
-    top: em(8px);
-  }
 }
 
 .carousel-nav {
@@ -135,7 +134,14 @@
 .intro__heading {
   font-family: $font-family--display;
   font-weight: $font-weight--heavy;
-  margin-bottom: rem(60px);
+  // margin-bottom: rem(60px);
+  &:after {
+    content: '';
+    display: block;
+    margin: rem(24px) auto rem(24px);
+    width: em(32px);
+    border-bottom: 1px solid $robin-egg-blue;
+  }
 }
 .intro__paragraph {
   margin-bottom: rem(32px);
@@ -144,6 +150,7 @@
   padding: 0 em(100px) em(64px) 0;
   width: em(335px);
   max-width: 100%;
+  float: left;
   @media (max-width: 980px) {
     float: none;
     display: block;
@@ -153,6 +160,7 @@
 }
 .blurb__story {
   max-width: em(577px);
+  float: left;
   @media (max-width: 980px) {
     float: none;
     max-width: 100%;

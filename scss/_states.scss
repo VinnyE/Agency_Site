@@ -1,3 +1,7 @@
-.current-page {
-  color: $robin-egg-blue;
+// .current-page {
+//   color: $robin-egg-blue;
+// }
+.is-open {
+    transform: rotate(90deg);
+    top: em(8px);
 }
